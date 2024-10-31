@@ -1,0 +1,12 @@
+<div class="product-list">
+    <h2>EDIÇÃO DE HALLOWEEN</h2>
+    <ul>
+        <li *ngFor="let livraria of livraria">
+            <img src="{{livraria.image}}" alt="">
+            <h3>{{livraria.nome}}</h3>
+            <h5>{{ livraria.autor}}</h5>
+            <p>{{livraria.preco | currency: 'BRL'}}</p>
+            <div class="btn">Comprar</div>
+        </li>
+    </ul>
+</div>
